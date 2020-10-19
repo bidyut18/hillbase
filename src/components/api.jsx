@@ -1,6 +1,5 @@
 import React from "react";
 import Card from "./card";
-require("dotenv").config();
 class Api extends React.Component {
   state = {
     input: "",
@@ -20,7 +19,7 @@ class Api extends React.Component {
   };
 
   getData = () => {
-    const key = process.env.API_KEY;
+    const key = process.env.REACT_APP_API_KEY;
     const xhr = new XMLHttpRequest();
     xhr.open(
       "GET",
