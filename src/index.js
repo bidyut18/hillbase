@@ -5,8 +5,8 @@ import "./index.css";
 import Star from "./star";
 import * as serviceWorker from "./serviceWorker";
 import "bootstrap/dist/css/bootstrap.css";
-
-ReactDOM.render(<Star />, document.getElementById("root"));
+const key = process.env.API_KEY;
+ReactDOM.render(<Star key={key} />, document.getElementById("root"));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

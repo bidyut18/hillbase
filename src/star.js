@@ -5,7 +5,9 @@ import Navbar from "./components/navbar";
 class Star extends Component {
   constructor(props) {
     super(props);
-    this.state = { name: "Starship Weather" };
+    this.state = {
+      name: "Starship Weather"
+    };
   }
   render() {
     return (

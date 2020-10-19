@@ -19,7 +19,7 @@ class Api extends React.Component {
   };
 
   getData = () => {
-    const key = process.env.API_KEY;
+    const key = this.props.key;
     const xhr = new XMLHttpRequest();
     xhr.open(
       "GET",
