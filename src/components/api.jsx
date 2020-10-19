@@ -20,11 +20,10 @@ class Api extends React.Component {
 
   getData = () => {
     const key = process.env.API_KEY;
-    const id = process.env.ID;
     const xhr = new XMLHttpRequest();
     xhr.open(
       "GET",
-      `https://api.${id}.org/data/2.5/weather?q=${this.state.input}&appid=${key}`
+      `https://api.openweathermap.org/data/2.5/weather?q=${this.state.input}&appid=${key}`
     );
     xhr.responseType = "json";
     xhr.onload = () => {
