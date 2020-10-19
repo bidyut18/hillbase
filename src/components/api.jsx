@@ -28,7 +28,6 @@ class Api extends React.Component {
     xhr.responseType = "json";
     xhr.onload = () => {
       const data = xhr.response;
-      console.log(data);
       const status = data.weather[0].main; //Status
       const description = data.weather[0].description; //description
       const loc = data.name; //Name
