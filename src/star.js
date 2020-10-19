@@ -11,7 +11,16 @@ class Star extends Component {
     return (
       <div>
         <Navbar name={this.state.name} />
-        <Api />
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "row",
+            justifyContent: "center",
+          }}
+        >
+
+          <Api />
+        </div>
       </div>
     );
   }
