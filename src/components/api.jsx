@@ -1,5 +1,6 @@
 import React from "react";
 import Card from "./card";
+require("dotenv").config();
 class Api extends React.Component {
   state = {
     input: "",
